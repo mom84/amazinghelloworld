@@ -9,14 +9,13 @@ public class HelloWorld {
 
 
      HelloWorld(Hello hello, World world){
-        this.hello = hello;
+        this.hello = new Hello();
         this.world= world;
     }
 
     public String seyHelloWorld(){
         String hello = this.hello.seyHello();
         String world = this.world.seyWorld();
-
         return hello+ " " + world;
     }
 }
